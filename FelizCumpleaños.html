@@ -506,8 +506,12 @@
     <div class="message">¡Feliz Cumpleaños vistima! ❤️</div>
     <div id="bubbles-text"></div>
     <img src="Barbie.ico" alt="Barbie" class="barbie-icon">
+    <audio id="bg-music" src="happyBirthday.mp3" autoplay loop></audio>
     <script src="script.js"></script>
     <script>
+        // Ajusta el volumen al 40%
+        document.getElementById('bg-music').volume = 0.4;
+
         // Lista de mensajes románticos que aparecerán en burbujas
         const messages = [
             "Eres la más nenita que conozco ❤️",
