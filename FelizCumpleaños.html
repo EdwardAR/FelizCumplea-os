@@ -506,7 +506,11 @@
     <div class="message">¡Feliz Cumpleaños vistima! ❤️</div>
     <div id="bubbles-text"></div>
     <img src="Barbie.ico" alt="Barbie" class="barbie-icon">
-    <audio id="bg-music" src="happyBirthday.mp3" autoplay loop></audio>
+    <button id="play-music"
+        style="position:fixed;top:20px;right:20px;z-index:9999;padding:10px 20px;border-radius:10px;background:#d63384;color:#fff;border:none;font-size:16px;box-shadow:0 2px 8px rgba(0,0,0,0.2);cursor:pointer;">
+        ▶️ Activar música
+    </button>
+    <audio id="bg-music" src="happyBirthday.mp3" loop></audio>
     <script src="script.js"></script>
     <script>
         // Ajusta el volumen al 40%
@@ -585,6 +589,15 @@
 
         // Llamamos a la función createTextBubble cada 500 milisegundos (0.5 segundos)
         setInterval(createTextBubble, 500);
+
+        const audio = document.getElementById('bg-music');
+        const btn = document.getElementById('play-music');
+        audio.volume = 0.4;
+
+        btn.addEventListener('click', function () {
+            audio.play();
+            btn.style.display = 'none';
+        });
     </script>
 </body>
 
