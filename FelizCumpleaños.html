@@ -3,8 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Bubbles love ❤️</title>
+        <title>Nenita❤️</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="Barbie.ico" type="image/x-icon">
         <style>
             body {
     display: flex;
@@ -190,12 +191,28 @@
     }
 }
 
+.barbie-icon {
+    transition: transform 0.5s;
+    animation: spin 6s linear infinite;
+    box-shadow: 0 8px 24px rgba(214, 51, 132, 0.3);
+    border-radius: 50%;
+}
 
+.barbie-icon:hover {
+    transform: scale(1.15) rotate(-10deg);
+    box-shadow: 0 16px 32px rgba(214, 51, 132, 0.5);
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg);}
+    100% { transform: rotate(360deg);}
+}
         </style>
     </head>
     <body>
         <div class="message">¡Feliz Cumpleaños vistima! ❤️</div>
         <div id="bubbles-text"></div>
+        <img src="Barbie.ico" alt="Barbie" class="barbie-icon" style="width: 200px; height: 200px;">
         <script src="script.js"></script>
         <script>
             // Lista de mensajes románticos que aparecerán en burbujas
@@ -271,7 +288,6 @@ function createTextBubble() {
 
 // Llamamos a la función createTextBubble cada 500 milisegundos (0.5 segundos)
 setInterval(createTextBubble, 500);
-
         </script>
     </body>
 
