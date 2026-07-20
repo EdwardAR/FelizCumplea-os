@@ -1,6 +1,6 @@
 # Feliz Cumpleaños 🎂
 
-Página web estática de cumpleaños con estilo glassmorphism, confeti animado y burbujas de texto flotantes.
+Página web estática de cumpleaños con estilo glassmorphism, confeti animado, burbujas de texto flotantes, pastel con velas interactivo, fuegos artificiales y detección de soplido por micrófono.
 
 ## Estructura del proyecto
 
@@ -48,6 +48,17 @@ const messages = [
 ```
 
 También puedes cambiar los colores editando las variables CSS (tonos `#d63384` y derivados).
+
+## Funcionalidades
+
+| Característica | Descripción |
+|---|---|
+| 🎵 **Música** | Botón toggle que inicia/pausa/reanuda la canción de fondo |
+| 🎆 **Fuegos artificiales** | Explosiones de partículas al cargar y cohetes automáticos en bucle |
+| 🎂 **Pastel con velas** | Pastel de dos pisos con 5 velas; haz clic para apagarlas |
+| 💨 **Soplo por mic** | Usa el micrófono para apagar todas las velas de un soplido |
+| 🎉 **Confeti** | 80 piezas cayendo infinitamente (40 en mobile) |
+| 💬 **Burbujas** | Mensajes flotantes con corrección de posición en tiempo real |
 
 ### 3. Desplegar en Vercel
 

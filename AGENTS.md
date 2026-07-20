@@ -22,6 +22,10 @@ Audio does **not** autoplay. User clicks "🎵 Activar música" button (top-righ
 
 - **Confetti**: 80 random pieces generated on load with CSS `confettiFall` animation (infinite loop).
 - **Text bubbles**: `messages[]` array + `setInterval(createTextBubble, 500)` — uses `vw`/`vh` positioning with runtime bounds correction.
+- **Fireworks**: Canvas-based particle system. Auto-fires 3 bursts on load, then random rockets on a timer.
+- **Cake + candles**: Pure CSS cake with 5 candles. Click a candle to blow it out (smoke puff animation). When all 5 are out, a celebration message appears.
+- **Mic blow detection**: Uses `getUserMedia` + `AnalyserNode` to detect blowing sounds. When loud noise (>55 avg) is detected, all candles blow out automatically. Gracefully degrades if mic permission is denied.
+- **Audio toggle**: Button toggles play/pause instead of hiding — user can restart music after stopping.
 - All JS is inline; no external JS files.
 
 ## Styling
