@@ -6,9 +6,9 @@ Static single-page HTML birthday greeting. No build system, no dependencies, no 
 
 - `index.html` — single HTML file with inline CSS and JS. This is the only source file.
 - `vercel.json` — static deployment config (`cleanUrls: true`).
-- `Barbie.ico` — favicon / decorative image.
-- `fotoJhoy.png` — background portrait (overlaid via `body::before`) and card thumbnail.
-- `happyBirthday.mp3` — background music (loop, starts on button click, volume 0.4).
+- `assets/images/Barbie.ico` — favicon / decorative image.
+- `assets/images/fotoJhoy.png` — background portrait (overlaid via `body::before`) and card thumbnail.
+- `assets/audio/happyBirthday.mp3` — background music (loop, starts on button click, volume 0.4).
 
 ## How to run
 
